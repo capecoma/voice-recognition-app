@@ -1,0 +1,7 @@
+fastapi==0.68.1
+uvicorn==0.15.0
+websockets==10.0
+SpeechRecognition==3.10.0
+whisper==1.1.10
+numpy==1.24.3
+PyAudio==0.2.13
