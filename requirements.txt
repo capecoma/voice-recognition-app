@@ -1,4 +1,9 @@
+flask==2.0.1
+flask-socketio==5.1.1
+flask-cors==3.0.10
 SpeechRecognition==3.10.0
 whisper==1.1.10
 numpy==1.24.3
 PyAudio==0.2.13
+eventlet==0.30.2
+gevent-websocket==0.10.1

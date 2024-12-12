@@ -1,79 +1,58 @@
-# Voice Recognition App
+# Voice Recognition App (Replit Version)
 
-A Python application that listens for trigger words, records audio, and provides transcription using OpenAI's Whisper model. Includes both a backend API and a React frontend interface.
+A Python application that listens for trigger words, records audio, and provides transcription using OpenAI's Whisper model. This version is optimized for running on Replit.
 
 ## Features
 
 - Continuous listening for trigger words
 - Automatic recording after trigger word detection
 - Audio transcription using Whisper
-- Real-time status updates via WebSocket
-- Modern React frontend with live updates
-- Saves both audio recordings and transcriptions
+- Real-time updates via WebSocket
+- Web interface for control and monitoring
 
-## Project Structure
+## Running on Replit
 
-```
-├── backend/
-│   ├── app.py              # FastAPI backend server
-│   ├── voice_recorder.py   # Voice recognition implementation
-│   └── requirements.txt    # Python dependencies
-├── frontend/
-│   ├── src/
-│   │   └── components/    # React components
-│   └── package.json       # Node.js dependencies
-└── README.md
-```
+1. Create a new Replit
+2. Choose "Import from GitHub"
+3. Enter the repository URL
+4. Select the `replit-version` branch
+5. Click "Import from GitHub"
 
-## Installation
+The application will automatically install dependencies and start running.
 
-### Backend
+## Local Development
 
-1. Create and activate a virtual environment:
+1. Clone the repository:
 ```bash
-python -m venv venv
-source venv/bin/activate  # On Windows: .\venv\Scripts\activate
+git clone -b replit-version https://github.com/capecoma/voice-recognition-app.git
+cd voice-recognition-app
 ```
 
-2. Install backend dependencies:
+2. Install dependencies:
 ```bash
-cd backend
 pip install -r requirements.txt
 ```
 
-3. Start the backend server:
+3. Run the application:
 ```bash
-python app.py
-```
-
-### Frontend
-
-1. Install frontend dependencies:
-```bash
-cd frontend
-npm install
-```
-
-2. Start the development server:
-```bash
-npm run dev
+python main.py
 ```
 
 ## Usage
 
-1. Open the frontend application in your browser (typically http://localhost:3000)
-2. Click the microphone button to start listening for trigger words
-3. Say one of the trigger words ("start", "record", or "begin") or use the simulation button
-4. The app will record for 20 seconds and then provide a transcription
+1. Open the web interface
+2. Click the microphone button to start listening
+3. Say a trigger word ("start", "record", or "begin") or use the simulation button
+4. The app will record for 20 seconds and provide a transcription
 
-## Customization
+## Configuration
 
 You can modify:
 - Trigger words
 - Recording duration
 - Whisper model size
 
-Edit the parameters in `backend/voice_recorder.py` to customize these settings.
+Edit these settings in `voice_recorder.py`.
 
 ## License
 
