@@ -12,9 +12,10 @@ env/
 *.wav
 *.txt
 
-# IDE
-.vscode/
-.idea/
+# Replit
+.upm/
+.config/
+.cache/
 
 # OS
 .DS_Store
